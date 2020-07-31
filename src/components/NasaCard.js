@@ -7,8 +7,8 @@ const NasaCard = props => {
             <Header>🌍 {props.title} 🪐</Header>
             <StyleImg src={props.imgUrl} alt={props.title} />
             <InfoDiv>
-                <Txter>{props.description}</Txter>
-                <Txter>{props.date}</Txter>
+                <Txter type="body">{props.description}</Txter>
+                <Txter type="date">{props.date}</Txter>
             </InfoDiv>
             
         </PicCard>

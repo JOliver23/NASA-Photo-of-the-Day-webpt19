@@ -1,13 +1,18 @@
 import React from 'react';
+import { ContNav, LinkCont, Linker, Header} from "./StyledComp";
 
 const NasaNav = () => {
     return (
-        <div>
-        <a href="#">Home</a>
-        <a href="#">Space</a>
-        <a href="#">About</a>
-        <a href="#">NASA</a>
-        </div>
+        <ContNav>
+            <Header>APOD</Header>
+            <LinkCont>
+                <Linker href="#">Home</Linker>
+                <Linker href="#">Space</Linker>
+                <Linker href="#">About</Linker>
+                <Linker href="#">NASA</Linker>
+            </LinkCont>
+            
+        </ContNav>
     )
 }
 

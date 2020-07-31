@@ -8,7 +8,7 @@ function CardGrid() {
     
     useEffect(() => {
         axios
-        .get('https://api.nasa.gov/planetary/apod?date=2020-07-18&api_key=FA13q6ocmVkPeWFcFgUdRTaAHaPA0VoZxyFrvPzf')
+        .get('https://api.nasa.gov/planetary/apod?date=2020-07-17&api_key=FA13q6ocmVkPeWFcFgUdRTaAHaPA0VoZxyFrvPzf')
         .then(response => setNasaData(response.data))
         .catch(err => console.log(err))
     }, [])

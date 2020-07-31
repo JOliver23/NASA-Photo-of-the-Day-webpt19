@@ -14,10 +14,10 @@ export const Header = styled.h1`
 `;
 
 export const StyleImg = styled.img`
-    max-width: 80vw;
+    width: 60vw;
     max-height: 60vh;
     border: 1rem double #4f4f4f;
-    border-radius: 25%;
+    border-radius: 5%;
     background-color: thistle;
     margin: 2rem;
 `;
