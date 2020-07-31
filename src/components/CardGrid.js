@@ -7,10 +7,11 @@ function CardGrid() {
     const [nasaData, setNasaData]= useState([])
     
     useEffect(() => {
-        axios.get('https://api.nasa.gov/planetary/apod?api_key=FA13q6ocmVkPeWFcFgUdRTaAHaPA0VoZxyFrvPzf')
-        .then(response => console.log("response: ", response))
+        axios
+        .get('https://api.nasa.gov/planetary/apod?api_key=FA13q6ocmVkPeWFcFgUdRTaAHaPA0VoZxyFrvPzf')
+        .then(response => setNasaData(response.data))
         .catch(err => console.log(err))
-    })
+    }, [])
     return (
         <div>
             <NasaNav />
