@@ -1,13 +1,17 @@
 import React from "react";
+import { PicCard, Header, StyleImg, InfoDiv, Txter }from "./StyledComp";
 
 const NasaCard = props => {
     return (
-        <div>
-            <h1>🌍 {props.title} 🪐</h1>
-            <img src={props.imgUrl} alt={props.title} />
-            <p>{props.description}</p>
-            <p>{props.date}</p>
-        </div>
+        <PicCard>
+            <Header>🌍 {props.title} 🪐</Header>
+            <StyleImg src={props.imgUrl} alt={props.title} />
+            <InfoDiv>
+                <Txter>{props.description}</Txter>
+                <Txter>{props.date}</Txter>
+            </InfoDiv>
+            
+        </PicCard>
     )
 };
 
